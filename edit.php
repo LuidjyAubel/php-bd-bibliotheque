@@ -84,6 +84,11 @@ if ((isset($_GET['id'])) && !empty($_GET['id']))
         <title>Mofier</title>
     </head>
     <body>
+        <script>
+            function confirmer(){
+                window.confirm("Voulez vous vraiment modifier ?");
+            }
+        </script>
     <main class ="container">
         <div class="row">
             <section class="col-12">
@@ -102,7 +107,7 @@ if ((isset($_GET['id'])) && !empty($_GET['id']))
             <p>
             
                 <a class ="btn btn-info" href="index.php"> Retour à la liste </a>
-                <button class="btn btn-primary"> Modifier</button>
+                <button class="btn btn-primary" onclick="confirmer()"> Modifier</button>
                 
             </p>
             </form>
