@@ -35,7 +35,7 @@ mysqli_stmt_close($stmt);
  $_SESSION['message'] ='Le type de livre "'.$label.'" a été enregistré';
 
  // On ferme la connexion
- include_once 'close.php';
+ include_once('close.php');
 
  // On renvoi vers la page principale
  header('Location: index.php');
